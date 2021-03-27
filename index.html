@@ -28,19 +28,32 @@
           </div>
         </form>
     </header>
-    
-</body>
-<main class="page-content">
+    <main class="page-content" id="page-content"> 
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks To Do</h2>
-<ul class="task-list" id="tasks-to-do"> <script src="./assets/js/script.js"></script>
-      </ul>
-    </section>
+<ul class="task-list" id="tasks-to-do"> 
+  <li class="task-item" data-task-id="0">
+    <div class="task-info">
+      <h3 class="task-name">Create Task</h3>
+      <span class="task-type">Web</span>
+    </div>
+    <div class="task-action">
+      <button class="btn edit-btn" data-task-id="0">Edit</button>
+      <button class="btn delete-btn" data-task-id="0">Delete</button>
+     <select name="status-change" data-task-id="0" class="select-status">
+<option value="To Do">To Do</option>
+<option value="In Progress">In Progress</option>
+<option value="Completed">Completed</option>
+   </select>
+  </div>
+ </li>    
+</ul>
+</section>
+    <!-- Tasks in progress -->
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks In Progress</h2>
       <ul class="task-list" id="tasks-in-progress"></ul>
     </section>
-    
     <!-- Tasks Completed -->
     <section class="task-list-wrapper">
       <h2 class="list-title">Tasks Completed</h2>
@@ -50,4 +63,6 @@
 <footer>
     &copy;2020 by Taskinator
   </footer>
+  <script src="./assets/js/script.js"></script>
+  </body>
   </html>
